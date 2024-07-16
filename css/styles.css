@@ -5,6 +5,7 @@ html{
 }
 body{
     margin: 0;
+    background-color: #EBDDC3;
 }
 nav {
     position: fixed;
@@ -17,6 +18,10 @@ nav {
 
 .scrollUp {
     transform: translateY(-80px);
+}
+
+.ground-up {
+    transform: translateY(-100px);
 }
 
 .isNotTop {
@@ -50,18 +55,33 @@ nav ul a:hover {
 
 .secondary-section{
     display: flex;
+    z-index: 1;
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .section-1{
-    background-color: #3e301d;
+    background-size: cover;
+    background-position-x: center;
     color: #EAD2D1;
-
+    transition: 0.5s;
 }
+
+.profile-container-background{
+    width: 100%;
+    height: calc(100% + 185px);
+    position: absolute;
+    background-image: url("../public/ground.png");
+    transition: 0.5s;
+    transform: translateY(-185px);
+}
+
 .section-2{
-    background-color: #EFB9AE;
+    background-color: #EBDDC3;
 }
 .section-3{
-    background-color: #18183D;
+    background-color: #3C2E1B;
     color: #EAD2D1;
 }
 
