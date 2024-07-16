@@ -10,8 +10,13 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    color: #18183D;
     font-weight: bold;
+    transition: 0.5s;
+    background-color:#D5D6E2 ;
+}
+
+.scrollUp {
+    transform: translateY(-80px);
 }
 
 nav ul {
@@ -22,20 +27,57 @@ nav ul {
 }
 nav ul a {
     text-decoration: none;
+    color: #18183D !important;
 }
 
+nav ul a:hover {
+    color: #5d5d88 !important;
+}
 
 .section-home{
     height: 100vh;
     background-color: #D5D6E2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondary-section{
+    display: flex;
 }
 
 .section-1{
-    height: 100vh;
     background-color: #EAD2D1;
 }
-
 .section-2{
-    height: 100vh;
     background-color: #EFB9AE;
+}
+.section-3{
+    background-color: #18183D;
+    color: #EAD2D1;
+}
+.home-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.profile-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.image-container{
+    width: 100%;
+    background-image: url("https://images.inc.com/uploaded_files/image/1920x1080/getty_478389113_970647970450091_99776.jpg");
+    background-size: cover;
 }
