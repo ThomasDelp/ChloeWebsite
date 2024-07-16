@@ -12,11 +12,15 @@ nav {
     width: 100%;
     font-weight: bold;
     transition: 0.5s;
-    background-color:#D5D6E2 ;
+    background-color:transparent ;
 }
 
 .scrollUp {
     transform: translateY(-80px);
+}
+
+.isNotTop {
+    background-color:#eddab0 ;
 }
 
 nav ul {
@@ -36,10 +40,12 @@ nav ul a:hover {
 
 .section-home{
     height: 100vh;
-    background-color: #D5D6E2;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    background-image: url("../public/background_chloe.png");
+    background-size: cover;
+    background-position-x: center;
 }
 
 .secondary-section{
@@ -47,7 +53,9 @@ nav ul a:hover {
 }
 
 .section-1{
-    background-color: #EAD2D1;
+    background-color: #3e301d;
+    color: #EAD2D1;
+
 }
 .section-2{
     background-color: #EFB9AE;
@@ -56,10 +64,17 @@ nav ul a:hover {
     background-color: #18183D;
     color: #EAD2D1;
 }
+
 .home-information{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
+}
+
+.home-design{
+    height: 100%;
+    width: 100%;
 }
 
 .profile-container{
