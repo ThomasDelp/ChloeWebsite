@@ -14,14 +14,11 @@ nav {
     font-weight: bold;
     transition: 0.5s;
     background-color:transparent ;
+    z-index: 2;
 }
 
 .scrollUp {
     transform: translateY(-80px);
-}
-
-.ground-up {
-    transform: translateY(-100px);
 }
 
 .isNotTop {
@@ -44,13 +41,17 @@ nav ul a:hover {
 }
 
 .section-home{
+    height: 120vh;
+    background-image: url("../public/background_chloe.png");
+    background-size: cover;
+    background-position-x: center;
+}
+
+.home-information-container{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-image: url("../public/background_chloe.png");
-    background-size: cover;
-    background-position-x: center;
 }
 
 .secondary-section{
@@ -73,7 +74,7 @@ nav ul a:hover {
     height: calc(100% + 185px);
     position: absolute;
     background-image: url("../public/ground.png");
-    transition: 0.5s;
+    transition: 0.1s;
     transform: translateY(-185px);
 }
 

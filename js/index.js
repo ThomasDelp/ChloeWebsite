@@ -4,7 +4,7 @@ var c, currentScrollTop = 0, navbar;
 document.addEventListener("DOMContentLoaded", () => {
     navbar = document.getElementById('navbar');
     home = document.getElementById('home');
-    ground = document.getElementById('section-1');
+    ground = document.getElementById('section-1-background');
 
     console.log(navbar)
     
@@ -26,20 +26,14 @@ document.addEventListener("scroll", () => {
     }
 
     if (a != 0){
-      console.log("1")
       navbar.classList.add("isNotTop");
     }else{
-      console.log("2")
       navbar.classList.remove("isNotTop");
     }
 
-    if(a >= home.offsetHeight/2){
-      ground.classList.remove("ground-up");
-    }else{
-      ground.classList.add("ground-up");
+    if(a > 0 && a <= home.offsetHeight){
+      ground.style.transform = `translateY(${-(a/home.offsetHeight * 100 + 185)}px)`;
     }
 
     c = currentScrollTop;
-   
-   console.log(a);
 });
